@@ -1,0 +1,90 @@
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* Dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Additional styles for your existing elements */
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.fade-in {
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.slide-in {
+    animation: slideIn 2s;
+}
+
+@keyframes slideIn {
+    from {transform: translateX(-100%);}
+    to {transform: translateX(0);}
+}
+
+.bounce-in {
+    animation: bounceIn 2s;
+}
+
+@keyframes bounceIn {
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
+
+.hidden {
+    display: none;
+}
+
+.photo-container {
+    margin: 20px 0;
+}
+
+.photo {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
